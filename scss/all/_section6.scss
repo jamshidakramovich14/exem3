@@ -1,0 +1,140 @@
+// -------------section 6 start---------------
+#section6 {
+  background: var(--Gray-50, #f9fafb);
+  padding: 96px;
+  .container {
+    // margin-top: 180px;
+    // margin-bottom: 96px;
+
+    h3 {
+      width: 105px;
+      text-align: center;
+      margin: 0 auto;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 48px;
+      border-radius: 12px;
+      padding: 6px 0;
+      border-radius: 12px;
+      background: var(--Gray-200, #e5e7eb);
+    }
+    p {
+      margin: 0 auto;
+      font-weight: 400;
+      font-size: 20px;
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .swiper {
+      position: relative;
+      width: 100%;
+      .swiper-wrapper {
+        .swiper-slide {
+          margin-top: 48px;
+          width: 100%;
+          justify-content: space-between;
+          display: flex;
+          .swiperr {
+            padding: 20px 20px;
+            width: 373px;
+            height: 428px;
+            padding: 48px;
+            box-shadow: 2px 4px 3px 5px rgba(192, 192, 192, 0.401);
+            img {
+              width: 64px;
+              height: 64px;
+              margin: 0 auto;
+              display: block;
+              margin-bottom: 24px;
+            }
+            p {
+              width: 277px;
+              margin: 0 auto;
+              font-weight: 400;
+              font-size: 16px;
+              margin-bottom: 24px;
+              text-align: start;
+            }
+            h4 {
+              text-align: center;
+              font-size: 20px;
+              font-weight: 600;
+              margin-bottom: 5px;
+            }
+            p:last-child {
+              text-align: center;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// -------------section 6 end---------------
+
+
+
+// ------------- section6 responsive start---------------
+@media only screen and (max-width:768px){
+  #section6{
+    padding: 0;
+      .container{
+          .swiper{
+              overflow-y: hidden;
+              .swiper-wrapper{
+                  display: flex;
+                  flex-direction: column;
+                  .swiper-slide{
+                      .swiperr{ 
+                          width: 343px ;
+                      }
+                  }
+              }
+
+              .swiper-button-next{
+                  display: none;
+              }
+              .swiper-button-prev{
+                  display: none;
+              }
+          }
+      }
+  }
+}
+
+// ------------- section6 responsive end---------------
+
+@media (prefers-color-scheme: dark){
+  #section6{
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background: #030712; 
+    .container{
+
+        p{
+            color: white;
+        }
+
+        .swiper{
+            .swiper-wrapper{
+                .swiper-slide{
+                    .swiperr{
+                        background: #1F2937;
+                        border-radius: 12px;
+                        box-shadow: 0 0 0 0;
+                        p{
+                            color: white;
+                        }
+
+                        h4{
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}

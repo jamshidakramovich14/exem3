@@ -1,0 +1,12 @@
+.container {
+  max-width: 1216px !important; // your device or project width
+  margin: 0 auto;
+}
+
+// RESPONSIVE
+@media only screen and (max-width: 768px){
+    .container{
+      max-width: 768px;
+      padding: 0 16px;
+    }
+}
